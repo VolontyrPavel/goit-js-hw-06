@@ -14,6 +14,7 @@ function createBoxes (amount) {
 
     box.style.backgroundColor = getRandomHexColor();
 
+    box.classList.add('box');
     box.style.width = width + 'px';
     box.style.height = height + 'px';
     width += 10;
@@ -24,7 +25,8 @@ function createBoxes (amount) {
 }
 
 function destroyBoxes() {
-  boxes.remove();
+  boxes.querySelectorAll('.box').forEach(item => item.remove());
+
 }
 
 const inputNumber = document.querySelector('input');
