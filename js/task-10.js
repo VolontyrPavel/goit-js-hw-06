@@ -36,6 +36,5 @@ const boxes = document.querySelector('#boxes');
 let amount = 0;
 
 inputNumber.addEventListener('input', ev => amount = ev.currentTarget.value);
-inputNumber.addEventListener('blur', () => inputNumber.value = '');
 create.addEventListener ('click', () => createBoxes(amount));
 destroy.addEventListener ('click', () => destroyBoxes());
