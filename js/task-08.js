@@ -9,6 +9,7 @@ inputForm.addEventListener('submit', event => {
     if (emailValue === '' || passValue === '') {
         const alert = `<h4 style='color: red'>all fields must be filled</h4>`;
         inputForm.insertAdjacentHTML('beforeend', alert);
+        return;
     }
     else {
         const userData = {
